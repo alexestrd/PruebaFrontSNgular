@@ -1,0 +1,21 @@
+<div class="container text-center">
+    <div class="row align-items-start">
+      <div class="col">
+        <app-introducir (datoEnviado)="DatoEnviado($event)"></app-introducir>
+      </div>
+      <div class="col negro" style="background-color: #000; color: #fff; height: 100vh; width: 100%;">
+        <div style="display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100%;">
+            <p>Numero Ingresado: {{ datoRecibido }}</p>
+            <div *ngIf="valores">
+                <p>El resultado de la operacion es: {{resultadoF}}</p>
+                <p>El resultado de la operacion del Primo: {{resultadoPrimo}}</p>
+                <p>El resultado de la operacion del Fibonacci: {{resultadoFibo}}</p>
+                <p>El resultado de la operacion del Triangular: {{resultadoTria}}</p>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
